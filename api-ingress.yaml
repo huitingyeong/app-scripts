@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: basic-ingress
+  name: api-ingress
   namespace: market-demo
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "api-static-ip"

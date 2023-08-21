@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# pwd
 logfile=/usr/src/app/output.log
 
 export PATH="$PATH:/usr/src/app/google-cloud-sdk/bin"
@@ -15,7 +13,7 @@ sleep 20
 
 kubectl apply -f /usr/src/app/app-repo/api-service.yaml | tee -a $logfile
 
-sleep 30
+sleep 20
 
 kubectl apply -f /usr/src/app/app-repo/api-ingress.yaml | tee -a $logfile
 
