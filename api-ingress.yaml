@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: basic-ingress
+  namespace: market-demo
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: "api-temp-ip"
+spec:
+  defaultBackend:
+    service:
+      name: api
+      port:
+        number: 80
