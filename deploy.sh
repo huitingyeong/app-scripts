@@ -22,3 +22,5 @@ kubectl apply -f /usr/src/app/app-repo/web-deployment.yaml | tee -a $logfile
 sleep 20
 
 kubectl apply -f /usr/src/app/app-repo/web-service.yaml | tee -a $logfile
+
+sleep 120
