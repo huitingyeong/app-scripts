@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gcloud container clusters get-credentials innotech-demo-gke --region asia-southeast1 --project innotech-demo
+gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo
 
 kubectl create namespace market-demo
 
