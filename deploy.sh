@@ -3,7 +3,7 @@
 # pwd
 
 result=$(/usr/src/app/google-cloud-sdk/bin/gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo)
-echo $result
+echo $result > output.txt
 
 # kubectl create namespace market-demo
 
