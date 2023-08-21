@@ -9,7 +9,7 @@ gcloud container clusters get-credentials innotech-demo-gke-h --region asia-sout
 
 # kubectl create namespace market-demo | tee -a $logfile
 
-kubectl apply -f api-deployment.yaml | tee -a $logfile
+kubectl apply -f /usr/src/app/app-repo/api-deployment.yaml | tee -a $logfile
 
 sleep 20
 
