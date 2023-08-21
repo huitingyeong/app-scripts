@@ -1,11 +1,16 @@
 #!/bin/bash
 
 # pwd
+logfile=/usr/src/app/output.log
 
-result=$(/usr/src/app/google-cloud-sdk/bin/gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo)
-echo $result > output.txt
+export PATH="$PATH:/usr/src/app/google-cloud-sdk/bin"
 
-# kubectl create namespace market-demo
+result=$(gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo)
+echo $result | tee -a $logfile
+
+kubectl create namespace market-demo | tee -a $logfile
+
+cat $logfile
 
 # kubectl apply -f api-deployment.yaml
 
