@@ -13,14 +13,14 @@ kubectl apply -f api-deployment.yaml | tee -a $logfile
 
 sleep 20
 
-kubectl apply -f api-service.yaml | tee -a $logfile
+# kubectl apply -f api-service.yaml | tee -a $logfile
 
-sleep 30
+# sleep 30
 
-kubectl apply -f api-ingress.yaml | tee -a $logfile
+# kubectl apply -f api-ingress.yaml | tee -a $logfile
 
-kubectl apply -f web-deployment.yaml | tee -a $logfile
+# kubectl apply -f web-deployment.yaml | tee -a $logfile
 
-sleep 20
+# sleep 20
 
-kubectl apply -f web-service.yaml | tee -a $logfile
+# kubectl apply -f web-service.yaml | tee -a $logfile
