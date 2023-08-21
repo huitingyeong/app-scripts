@@ -4,7 +4,7 @@ metadata:
   name: basic-ingress
   namespace: market-demo
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "api-temp-ip"
+    kubernetes.io/ingress.global-static-ip-name: "api-static-ip"
 spec:
   defaultBackend:
     service:
