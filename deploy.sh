@@ -1,21 +1,23 @@
 #!/bin/bash
 
-gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo
+pwd
 
-kubectl create namespace market-demo
+# gcloud container clusters get-credentials innotech-demo-gke-h --region asia-southeast1 --project innotech-demo
 
-kubectl apply -f api-deployment.yaml
+# kubectl create namespace market-demo
 
-timeout 20
+# kubectl apply -f api-deployment.yaml
 
-kubectl apply -f api-ingress.yaml
+# timeout 20
 
-timeout 30
+# kubectl apply -f api-ingress.yaml
 
-kubectl apply -f api-ingress.yaml
+# timeout 30
 
-kubectl apply -f web-deployment.yaml
+# kubectl apply -f api-ingress.yaml
 
-timeout 20
+# kubectl apply -f web-deployment.yaml
 
-kubectl apply -f web-service.yaml
+# timeout 20
+
+# kubectl apply -f web-service.yaml
