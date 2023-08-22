@@ -23,7 +23,7 @@ spec:
             - name: REACT_APP_API_URL
               value: http://34.36.136.80
             - name: REACT_APP_CSP_NAME
-              value: GCP
+              value: Azure
           image: huitingyeong/market-frontend:7
           imagePullPolicy: Always
           name: web
