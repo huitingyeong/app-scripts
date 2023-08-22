@@ -20,6 +20,7 @@ spec:
     spec:
       containers:
         - image: huitingyeong/market-api:latest
+          imagePullPolicy: Always
           name: api
           ports:
             - containerPort: 9000
