@@ -24,7 +24,7 @@ spec:
               value: http://34.36.136.80
             - name: REACT_APP_CSP_NAME
               value: Azure
-          image: huitingyeong/market-frontend:7
+          image: huitingyeong/market-frontend:8
           imagePullPolicy: Always
           name: web
           ports:
